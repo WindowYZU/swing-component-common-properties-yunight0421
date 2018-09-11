@@ -33,11 +33,15 @@ public class PreferredSizeSample extends JPanel{
         JFrame frame=new JFrame();
         frame.setSize(800, 600);
         frame.setDefaultCloseOperation(WindowConstants.DISPOSE_ON_CLOSE);
+        //試試看改成 BorderLayout
         frame.setLayout(new FlowLayout());
+        ////////////////////////
         
         for(int i=0; i<10; i++){
             PreferredSizeSample c=new PreferredSizeSample();
-            c.setPreferredSize(new Dimension(150, 150));
+            //設定 preferredSize 為 50, 50 跟 100, 100 跟 150, 150
+            //觀察看看
+            /////////////////////////////////////////////
             frame.add(c);
         }
         frame.setVisible(true);
